@@ -1,0 +1,9 @@
+label,input,button{
+    font-size: 30px; background-color: brown;
+    color: aliceblue;
+    margin: 20px;
+}
+:hover{
+    background-color: beige;
+    color: blue;
+}

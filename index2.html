@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <label for="">Enter number</label>
+  <input type="number" id="menu" onchange="first()">
+  <button onclick="first()">Table Num</button>
+  <h2 id="page"></h2>
+
+
+
+
+
+  <script>
+function first() {
+  let size=document.getElementById('menu').value;
+  page = ' ';
+  for (let i = 1; i<=size; i++){
+
+    let pass = ' ';
+
+    for (var p = 1; p<=i; p++){
+
+     pass += " * ";
+
+    }
+    page += pass + "<br>"
+  }
+  document.getElementById('page').innerHTML=page;
+  
+}
+
+
+  </script>
+  
+</body>
+</html>
